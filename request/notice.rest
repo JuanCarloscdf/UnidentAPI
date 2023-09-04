@@ -1,0 +1,23 @@
+GET http://localhost:3500/notice
+
+###
+GET http://localhost:3500/notice/35f54d66-e19c-4e04-a8ce-ebe75ac5b365
+
+###
+POST  http://localhost:3500/notice
+Content-Type: application/json
+
+{
+    "message":"este es el segundo mensaje"
+}
+
+###
+PATCH  http://localhost:3500/notice/35f54d66-e19c-4e04-a8ce-ebe75ac5b365
+Content-Type: application/json
+
+{
+    "message":"este es el de3cimo mensaje"
+}
+
+###
+DELETE  http://localhost:3500/notice/fc5ef6e6-16f9-4bdb-8053-95875b37900e

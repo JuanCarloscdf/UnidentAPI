@@ -1,0 +1,31 @@
+GET http://localhost:3500/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNmFjYWQyMDQtNjg1Ny00NTY4LWJhNzUtMmM1MTY0YzkzN2U0IiwiZmlyc3RfbmFtZSI6Imp1YW4gY2FybG9zIiwiY2VsbHBob25lIjoiNzMwODAzNzIiLCJyb2wiOiJBRE1JTiJ9LCJpYXQiOjE2OTM2MDI2MzcsImV4cCI6MTY5NDgyNDYzN30.00cfpo9mxH9z9lvnJeaNxKnUvAEzkbBjC4Efaw1nAE8
+
+###
+GET http://localhost:3500/user/2990b211-c186-48a7-8d9a-a4dfe292159c
+
+###
+POST http://localhost:3500/user
+Content-Type: application/json
+
+{
+  "first_name": "juan carlos",
+  "last_name": "mamani rojas",
+  "password": "123456",
+  "email": "juantest@juantest2.com",
+  "cellphone": "75530803721",
+  "dddd":"ddddd"
+}
+
+###
+PATCH  http://localhost:3500/user/b06b14e7-4b89-48e5-ae6e-dda23ba060fb
+Content-Type: application/json
+
+{
+  "first_name": "juan carlos modificado",
+  "last_name": "kick boxer"
+}
+
+###
+DELETE http://localhost:3500/user/74ae91c6-ed03-4838-87f1-35424e8f01db
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImZpcnN0X25hbWUiOiJ2YW4gZGFtZXMiLCJjZWxscGhvbmUiOiI3MzA4MDM3MmQyIiwicm9sIjoiREVWIn0sImlhdCI6MTY4OTE2Mzk5MywiZXhwIjoxNjg5MTc2MjEzfQ.JIniXTDPIfz8AhTxW-g0PrYqgSMt9_KlSyDDF_-GNGQ

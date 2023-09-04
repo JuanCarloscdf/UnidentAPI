@@ -1,0 +1,28 @@
+###
+GET http://localhost:3500/offering
+
+### 
+GET http://localhost:3500/offering/5ee6c6d5-626a-4ca9-a7be-772a8c049430
+
+### 
+POST  http://localhost:3500/offering
+Content-Type: application/json
+
+{
+  "title": "title 2",
+  "image": "url_de_imagen_2",
+  "message": "este menssaje sera desplegado en la cartilla del front end"
+}
+
+### 
+PATCH  http://localhost:3500/offering/5ee6c6d5-626a-4ca9-a7be-772a8c049430
+Content-Type: application/json
+
+{
+  "title": "title 3",
+  "image": "url_de_imagen_3",
+  "message": "este menssaje sera desplegado en la cartilla del front end"
+}
+
+### 
+DELETE  http://localhost:3500/offering/5ee6c6d5-626a-4ca9-a7be-772a8c049430

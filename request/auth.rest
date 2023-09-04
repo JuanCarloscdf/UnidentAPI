@@ -1,0 +1,11 @@
+POST http://localhost:3500/auth
+content-Type:application/json
+
+{
+    "password": "123456",
+    "email": "juan@juan.com"
+}
+
+###
+"password": "1234563",
+    "email": "juan@vandame.com"

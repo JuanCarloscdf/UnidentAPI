@@ -1,0 +1,15 @@
+POST http://localhost:3500/appointment
+Content-Type: application/json
+
+{
+  "userId": "2990b211-c186-48a7-8d9a-a4dfe292159c",
+  "date": "2023-09-05",
+  "evaluation": "la caries es profundassssssss, se necesita un tratamiento de conducto",
+  "hour": "08:00-08:45",
+  "paid": 2,
+  "total": 500,
+  "apptNumber": 1
+}
+
+###
+GET http://localhost:3500/appointment/weekData/2023-09-01

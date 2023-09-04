@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:5.7.42-oracle
+    container_name: mysql_unident
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: unident
+      MYSQL_USER: user
+      MYSQL_PASSWORD: example
+
+    ports:
+      - 3306:3306
+

@@ -1,0 +1,31 @@
+GET http://localhost:3500/review
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNmFjYWQyMDQtNjg1Ny00NTY4LWJhNzUtMmM1MTY0YzkzN2U0IiwiZmlyc3RfbmFtZSI6Imp1YW4gY2FybG9zIiwiY2VsbHBob25lIjoiNzMwODAzNzIiLCJyb2wiOiJBRE1JTiJ9LCJpYXQiOjE2ODk2OTIxMTMsImV4cCI6MTY5MDkxNDExM30.ayEVj9Bal43h2Y_hkAQeV5WEyMTW4IzO3XyP1WYMocA
+###
+GET http://localhost:3500/review/0f3db3a8-d4c0-4143-8ea6-1e5a11193bf6
+
+###
+POST  http://localhost:3500/review
+Content-Type: application/json
+
+{
+    "image": "url de imagen 1",
+    "mesage": "esta es la fue una buena atencion al cliente, los medicos estan siempre atentos a que no sufras dolor innecesario",
+    "userId": "2e402d5e-9163-4a5e-8c1c-441cf997b0cf"
+}
+
+###
+PATCH  http://localhost:3500/review/cf1fef83-2ecf-4e7f-8c6e-88990896a6cf
+Content-Type: application/json
+
+{
+    "image": "url de imagen modificada test",
+    "mesage": "esta es la fue una buena atencion al cliente, los medicos estan siempre atentos a que no sufras dolor innecesario"
+}
+###
+DELETE  http://localhost:3500/review/8d5a041f-2c0d-47e8-899e-b5f30eebf702
+
+###
+GET   http://localhost:3500/review/userReview/2e402d5e-9163-4a5e-8c1c-441cf997b0cf
+
+###
+GET   http://localhost:3500/review/userReview/82faa59c-d2d1-4615-9eeb-3c3e43ea58d5

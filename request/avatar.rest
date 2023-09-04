@@ -1,0 +1,10 @@
+
+POST http://localhost:3500/user/avatar/6acad204-6857-4568-ba75-2c5164c937e4
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="avatar"; filename="cara-de-nino.png"
+Content-Type: image/png
+
+< /home/toto/Descargas/cara-de-nino.png
+--boundary--
